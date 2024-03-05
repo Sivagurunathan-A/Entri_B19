@@ -1,0 +1,67 @@
+@font-face {
+    font-family: caprasimo;
+    src: url(Caprasimo-Regular.ttf) format("truetype");
+}
+header {
+    
+    border-radius:15px;
+    background-color: #7f7f7f;
+    padding: 1px;
+    margin:0px 30px;
+}
+header h1{
+    color:#fff;
+    padding-left:3rem;
+    font-family: caprasimo;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px skyblue;
+}
+
+nav ul {
+    display: flex;
+    margin:24px 0px 0px;
+}
+nav ul li{
+    list-style-type: none;
+    margin-right: 10px;
+    background-color: #7f7f7f;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;;
+    border-bottom: 2px solid #000;
+}
+main{
+    margin:20px 30px;
+    background-color: #7f7f7f;
+    padding:25px 15px;
+    border-radius: 25px
+}
+main section{
+    margin: 0px 0px 15px;
+    padding: 5px 0px;
+    border: 1px dashed #fff;
+    border-radius: 15px 
+
+}
+main section p{color:#fff;
+    padding: 5px;margin:0px;
+    border-bottom: 1px solid #fff;
+    padding-left:20px;
+    font-family:caprasimo;
+}
+
+main section img{
+    padding:20px 10px 0px 15px;
+    width:100px;
+    border:2px solid #7f7f7f;
+}
+footer{
+    border-radius:15px;
+    background-color: #7f7f7f;
+    padding: 1px;
+    margin:20px 30px;
+}
+footer p{
+    text-align: center;
+    color:#fff;
+}
