@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Change Background</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        h1{
+            text-align: center;
+            color:#D90166;
+        }
+        main{
+            height:90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <script>
+        var count = 0;
+        function fnChangeBgClick(){
+            debugger;
+            var _colors = ["white","orange","grey"];
+            var _Fontcolors = ["#D90166","white","black"];
+            
+            if(count == 0){
+                document.body.style.backgroundColor = _colors[count];
+                document.getElementById("h1").style.color = _Fontcolors[count];
+                count ++;
+            }
+            else if(count == 1){
+                document.body.style.backgroundColor = _colors[count];
+                document.getElementById("h1").style.color = _Fontcolors[count];
+                count ++;
+            }
+            else if(count == 2){
+                document.body.style.backgroundColor = _colors[count];
+                document.getElementById("h1").style.color = _Fontcolors[count];
+                count = 0;
+            }
+        }
+       
+
+        </script>
+</head>
+<body>
+    <header>
+        <h1 id="h1">Create design Using JavaScript</h1>
+    </header>
+    <main>
+        <button onclick="fnChangeBgClick()">Change Color</button>
+    </main>
+
+</body>
+</html>

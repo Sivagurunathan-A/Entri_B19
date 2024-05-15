@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <style>
+        body{font-family: sans-serif;}
+        label{font-size: 14px;}
+        input{padding:5px 0px 0px;outline: none; border-width:1px; border-top-color: transparent;width:100%; border-left-color: transparent;border-right-color: transparent;display: block;margin:0px 0px 5px;border-bottom-color:#ccc;}
+        button{width:100%;background-color:#fafafa;color:black;border:1px solid #ccc;padding: 10px 5px;font-weight:bold;}
+        h1{text-align: center;}
+        main{
+            width:400px;margin:auto;padding: 30px;
+        }
+        section{
+            border: 1px solid #f1f1f1; border-radius: 10px; padding: 25px 40px;box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            }
+            [class*="txterror"]{color:red; font-size:12px;display: block;margin:0px 0px 30px; padding:0px 0px;}
+            input[type="submit"],input[type="reset"]{
+                
+                border:none;
+                font-family: sans-serif;
+                font-weight: 600;
+                min-height: 32px;
+                line-height: 32px;
+                display: inline;
+                }
+                input[type="submit"]{
+                    background-color: darkblue;
+                    color: #fff;
+                }
+                input[type="reset"]{
+                    background-color: black;
+                    color: #fff;
+                }
+                sup.star{color:red;}
+    </style>
+    <script src="script.js"></script>
+        
+</head>
+<body>
+    <header>
+        <h1>Student Details</h1>
+    </header>
+
+    <main>
+        <section>
+            <form onsubmit="return fnValidate()" method="post" name="form1" action="studentdetailssubmitted.html">
+                <label for="txtName">Name<sup class="red">*</sup></label>
+                <input type="text" id="txtName" name="name" autocomplete="off">
+                <span class="txterror-name" id="txterror-name"></span>
+
+                <label for="txtRollNo">Roll No<sup  class="red">*</sup></label>
+                <input type="text" id="txtRollNo" name="rollno" autocomplete="off">
+                <span class="txterror-rollno" id="txterror-rollno"></span>
+
+                <input type="submit" value="Submit"> 
+                <input type="reset" value="Cancel" onclick="fnClearFields()"> 
+            </form>
+        </section>
+    </main>
+</body>
+</html>

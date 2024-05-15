@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Change</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        header{
+            margin-bottom: 60px;
+            border-bottom: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">Javascript - Background Color change based on User Input</h1>
+    </header>
+    <main>
+        <label>Enter any number between 1 to 100</label>
+        <input type="text" onkeyup="fnChangeBG()" id="txtNumber">
+    </main>
+    <script>
+        function fnChangeBG(){
+            var _val = document.getElementById("txtNumber").value;
+            if((_val < 10 ) && (_val > 0)){
+                document.body.style.backgroundColor = "Violet"
+            }
+            else if((_val < 30 ) && (_val > 10)){
+                document.body.style.backgroundColor = "Indigo"
+                document.getElementsByTagName("h1").style.color = "white"
+                document.getElementsByTagName("label").style.color = "white"
+            }
+            else if((_val < 50 ) && (_val > 30)){
+                document.body.style.backgroundColor = "Brown"
+                document.getElementsByTagName("h1").style.color = "white"
+                document.getElementsByTagName("label").style.color = "white"
+            }
+            else if((_val < 70 ) && (_val > 50)){
+                document.body.style.backgroundColor = "Green"
+                document.getElementsByTagName("h1").style.color = "white"
+                document.getElementsByTagName("label").style.color = "white"
+            }
+            else if((_val < 80 ) && (_val > 70)){
+                document.body.style.backgroundColor = "Yellow"
+                document.getElementsByTagName("h1").style.color = "white"
+                document.getElementsByTagName("label").style.color = "white"
+            }
+            else if((_val < 90 ) && (_val > 80)){
+                document.body.style.backgroundColor = "Orange"
+                document.getElementsByTagName("h1").style.color = "white"
+                document.getElementsByTagName("label").style.color = "white"
+            }
+            else if((_val < 100 ) && (_val > 90)){
+                document.body.style.backgroundColor = "red"
+                document.getElementsByTagName("h1").style.color = "white"
+                document.getElementsByTagName("label").style.color = "white"
+            }
+        }
+    </script>
+</body>
+</html>

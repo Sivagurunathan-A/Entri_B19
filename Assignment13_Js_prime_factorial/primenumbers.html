@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime numbers or not</title>
+    <script src="prime.js"></script>
+    <style>
+        body{font-family: sans-serif;}
+        label{font-size: 14px;}
+        input{padding:5px 0px 0px;outline: none; border-width:1px; border-top-color: transparent;width:100%; border-left-color: transparent;border-right-color: transparent;display: block;margin:0px 0px 5px;border-bottom-color:#ccc;}
+        button{width:100%;background-color:#fafafa;color:black;border:1px solid #ccc;padding: 10px 5px;font-weight:bold;}
+        h1{text-align: center;}
+        main{
+            width:400px;margin:auto;padding: 30px;
+        }
+        section{
+            border: 1px solid #f1f1f1; border-radius: 10px; padding: 25px 40px;box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            }
+            button{margin:20px auto;width:100px;display: block; background-color: darkblue;border:none;
+                min-height: 28px;line-height: 28px; padding: 0px;
+                    color: #fff;}
+            #txterror-prime{font-size: 12px;display: block;}        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Prime number or not</h1>
+    </header>
+
+    <main>
+        <section>
+            
+                <label for="txtprime">Enter a Number<sup class="red">*</sup></label>
+                <input type="text" id="txtprime" name="prime" autocomplete="off">
+                <span class="txterror-name" id="txterror-prime"></span>
+                <button type="button" onclick="fnSubmit()"> Submit</button>
+</section></main>
+
+</body>
+</html>
